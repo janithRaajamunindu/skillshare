@@ -1,0 +1,138 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E67E22; /* matching orange color */
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.chatbot-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatbot-name {
+    font-weight: bold;
+    color: #E67E22; /* matching orange color */
+}
+
+.refresh-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.chatbox {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.bot {
+    background-color: #E67E22; /* Orange for AI bot messages */
+    color: white;
+    align-self: flex-start; /* Align to the left */
+    margin-right: 20px; /* Optional for more spacing */
+    width: 80%; /* Adjust width of bot messages */
+}
+
+.message.user {
+    background-color: #e0e0e0; /* Gray for user messages */
+    align-self: flex-end; /* Align to the right */
+    margin-left: 20px; /* Optional for more spacing */
+    width: 80%; /* Adjust width of user messages */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.input-container button {
+    background-color: #E67E22; /* matching orange color */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #d45f14; /* slightly darker orange */
+}
+
+.quick-replies button {
+    background-color: #ddd;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none; /* Removed the black outline */
+}
+
+.quick-replies button:hover {
+    background-color: #ccc;
+}
+
+.close-button {
+    background-color: #E67E22; /* changed to orange */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+}
+
+.close-button:hover {
+    background-color: #d45f14; /* slightly darker orange */
+}

@@ -1,0 +1,127 @@
+.skill-plan-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+  margin-top: 10px;
+}
+
+.skill-plan-card:hover {
+  box-shadow: 0 6px 18px rgba(114, 188, 212, 0.25);
+}
+
+.skill-plan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.skill-plan-title {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #2c3e50;
+}
+
+.skill-plan-checkbox {
+  transform: scale(1.2);
+  accent-color: #72bcd4;
+}
+
+.skill-plan-edit-btn,
+.skill-plan-delete-btn {
+  color: #72bcd4;
+  font-size: 16px;
+}
+
+.skill-plan-edit-btn:hover,
+.skill-plan-delete-btn:hover {
+  background-color: #e7f7fb;
+}
+
+.skill-plan-body {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-top: 8px;
+}
+
+.skill-plan-metadata {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.skill-plan-tag {
+  background: #eaf6fb;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #72bcd4;
+}
+
+.skill-plan-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #999;
+  background-color: #2c3e500e;
+  padding: 2px;
+  border-radius: 20px;
+}
+
+.skill-plan-resources {
+  margin-top: 8px;
+}
+
+.skill-plan-resources-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.skill-plan-resources-value {
+  color: #555;
+  white-space: pre-wrap;
+}
+
+.skill-plan-status {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.skill-plan-completed-tag,
+.skill-plan-pending-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.skill-plan-completed-tag {
+  background: #e0f8f0;
+  color: #2ecc71;
+}
+
+.skill-plan-pending-tag {
+  background: #f9f9f9;
+  color: #72bcd4;
+}
+
+.skill-plan-completed {
+  background-color: #f2fdfc; /* light greenish-blue */
+}
+
+.skill-plan-active {
+  background-color: #ffffff; /* default white */
+}
+
